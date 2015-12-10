@@ -1,0 +1,263 @@
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A2FBCA1-D650-4A27-A07A-2AA7794541D9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.DataVisualization\3.5.0.0__31bf3856ad364e35\System.Web.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bellcurve.aspx" />
+    <Content Include="commitChanges.aspx" />
+    <Content Include="cc.aspx" />
+    <Content Include="candStatisticsI.aspx" />
+    <Content Include="candStatisticsII.aspx" />
+    <Content Include="BasicHeatMap.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="EditInfo.aspx" />
+    <Content Include="extrapolate.aspx" />
+    <Content Include="GenerateLocations.aspx" />
+    <Content Include="HeatMap.aspx" />
+    <Content Include="inputOffice.aspx" />
+    <Content Include="Locations.aspx" />
+    <Content Include="newlocations.aspx" />
+    <Content Include="office.aspx" />
+    <Content Include="saveLocations.aspx" />
+    <Content Include="scatterplots.aspx" />
+    <Content Include="SquirrelInTree.jpg" />
+    <Content Include="tables.aspx" />
+    <Content Include="upload.aspx" />
+    <Content Include="uploadFromExcel.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bellcurve.aspx.cs">
+      <DependentUpon>bellcurve.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bellcurve.aspx.designer.cs">
+      <DependentUpon>bellcurve.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="charts.cshtml.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="charts.cshtml.designer.cs">
+      <DependentUpon>charts.cshtml.cs</DependentUpon>
+    </Compile>
+    <Compile Include="commitChanges.aspx.cs">
+      <DependentUpon>commitChanges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commitChanges.aspx.designer.cs">
+      <DependentUpon>commitChanges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cc.aspx.cs">
+      <DependentUpon>cc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cc.aspx.designer.cs">
+      <DependentUpon>cc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="candStatisticsI.aspx.cs">
+      <DependentUpon>candStatisticsI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="candStatisticsI.aspx.designer.cs">
+      <DependentUpon>candStatisticsI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="candStatisticsII.aspx.cs">
+      <DependentUpon>candStatisticsII.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="candStatisticsII.aspx.designer.cs">
+      <DependentUpon>candStatisticsII.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasicHeatMap.aspx.cs">
+      <DependentUpon>BasicHeatMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasicHeatMap.aspx.designer.cs">
+      <DependentUpon>BasicHeatMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditInfo.aspx.cs">
+      <DependentUpon>EditInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditInfo.aspx.designer.cs">
+      <DependentUpon>EditInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="extrapolate.aspx.cs">
+      <DependentUpon>extrapolate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="extrapolate.aspx.designer.cs">
+      <DependentUpon>extrapolate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateLocations.aspx.cs">
+      <DependentUpon>GenerateLocations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenerateLocations.aspx.designer.cs">
+      <DependentUpon>GenerateLocations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HeatMap.aspx.cs">
+      <DependentUpon>HeatMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HeatMap.aspx.designer.cs">
+      <DependentUpon>HeatMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inputOffice.aspx.cs">
+      <DependentUpon>inputOffice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inputOffice.aspx.designer.cs">
+      <DependentUpon>inputOffice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Locations.aspx.cs">
+      <DependentUpon>Locations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Locations.aspx.designer.cs">
+      <DependentUpon>Locations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="newlocations.aspx.cs">
+      <DependentUpon>newlocations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newlocations.aspx.designer.cs">
+      <DependentUpon>newlocations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="office.aspx.cs">
+      <DependentUpon>office.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="office.aspx.designer.cs">
+      <DependentUpon>office.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="saveLocations.aspx.cs">
+      <DependentUpon>saveLocations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="saveLocations.aspx.designer.cs">
+      <DependentUpon>saveLocations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scatterplots.aspx.cs">
+      <DependentUpon>scatterplots.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scatterplots.aspx.designer.cs">
+      <DependentUpon>scatterplots.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tables.aspx.cs">
+      <DependentUpon>tables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tables.aspx.designer.cs">
+      <DependentUpon>tables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uploadFromExcel.aspx.cs">
+      <DependentUpon>uploadFromExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uploadFromExcel.aspx.designer.cs">
+      <DependentUpon>uploadFromExcel.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="charts.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3566</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
